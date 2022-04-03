@@ -44,7 +44,7 @@ void GaussElimi(){
             Data[j][i] = 0.0;
         }
     }
-}//对齐
+}//对齐版本采用_mm512_load_ps,不对齐版本采用_mm512_load_ps
 void display(){
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
